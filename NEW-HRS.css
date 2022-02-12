@@ -1,0 +1,39 @@
+/*
+ *
+ * MMM-HRS-PickupPlan
+ *
+ * Martin Andreassen
+ * ISC Licensed.
+ *
+ * Custom here your css module
+ *
+ */
+.tdTomorrow  {
+	color : yellow;
+	font-size: 28px;
+//	border: 3px dashed red;
+	vertical-align: middle;
+	text-align:center;
+}
+.tdToday {
+	color : red;
+	font-size: 25px;
+	border: 3px dashed red;
+	vertical-align: middle;
+	text-align:center;
+}
+.tdOrdi {
+	min-width: 50px;
+	font-size: 23px;
+	width: 64px;
+	color: #FFFFF0 ;
+	vertical-align: middle;
+}
+.HRSfraksjonsikon {
+	vertical-align: middle;
+}
+.trTomorrow  {
+	color : #FFFFFF;
+	border: 3px dashed red;
+	vertical-align: middle;
+}
