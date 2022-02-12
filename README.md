@@ -2,16 +2,18 @@
 
 This is an extention module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/). It will display the garbage collection dates for the Norwegian municipalities of Harstad, Narvik, Evenes, Gratangen, Ibestad, Kvæfjord, Lavangen and Tjeldsund.
 
+![Screenshot of the module](./MMM-HRS-PickupPlanScreenShot.png)
+
 
 ## Installing:
 
-Go to your "modules" directory *~/MagicMirror/modules* and type:
+Go to your 'modules' directory *~/MagicMirror/modules* and type:
 
-*git clone https://github.com/maan75/MMM-HRS-PickupPlan*
+'git clone https://github.com/maan75/MMM-HRS-PickupPlan'
 
 The module requires axios
 
-*npm install axios*
+'npm install axios'
 
 
 ## Using the module
