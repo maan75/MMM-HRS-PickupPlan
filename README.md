@@ -7,13 +7,13 @@ This is an extention module for the [MagicMirror²](https://github.com/MichMich/
 
 ## Installing:
 
-Go to your 'modules' directory *~/MagicMirror/modules* and type:
+Go to your `modules` directory *~/MagicMirror/modules* and type:
 
-'git clone https://github.com/maan75/MMM-HRS-PickupPlan'
+`git clone https://github.com/maan75/MMM-HRS-PickupPlan`
 
 The module requires axios
 
-'npm install axios'
+`npm install axios`
 
 
 ## Using the module
