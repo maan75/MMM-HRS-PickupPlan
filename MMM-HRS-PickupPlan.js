@@ -131,8 +131,10 @@ var henteOversiktTable = document.createElement('table');
 	//Ikoner;
 	  for (var j = 0; j < this.henteFraksjoner.length; j++) {	//For each element in henteFraksjoner
 	      var tdWrapper = document.createElement("img");
-	      tdWrapper.src = this.fraksjonInfo.find(x => x.Id === this.henteFraksjoner[j]).Ikon;
-      trWrapper.appendChild(tdWrapper);           
+	      tdWrapper.src = this.fraksjonInfo.find(x => x.Id === this.henteFraksjoner[j]).NorkartStandardFraksjonIkon;
+ 		tdWrapper.style.width = "50px";  // Hvis du setter bare bredde, vil høyden justeres automatisk
+ 		tdWrapper.style.height = "auto";
+      trWrapper.appendChild(tdWrapper);
 	    }  ///closing foreach fraksjon
  
  
@@ -155,14 +157,14 @@ socketNotificationReceived: function(notification, payload) {
     case "HRS_FRAK_INFO":
       this.fraksjonInfo = payload;
       this.loadedFrak = true 
-      console.log("FrakInfo OK")
+      console.log("MMM-HRS-PickupPlan Main: FrakInfo OK")
     break
     
     case "ADRESSEINFO":
       this.config.gateNavn = payload.gateNavn
       this.config.gateKode = payload.gateKode
       this.config.husnr = payload.husnr
-      console.log("Adresseinfo OK")
+      console.log("MMM-HRS-PickupPlan Main: Adresseinfo OK")
       
       this.getPickupPlan();  //Starting getPickupPlan
     break
@@ -171,7 +173,7 @@ socketNotificationReceived: function(notification, payload) {
       this.PickupPlanArr = payload;
       this.antallHenteDatoer = Object.keys(payload).length
       this.loaded = true;
-      console.log("PickupPlan OK")
+      console.log("MMM-HRS-PickupPlan Main: PickupPlan OK")
       this.updateDom();
     break
 	}
