@@ -27,7 +27,7 @@ var config = {
             position: "top_left",
             config: {
                 kommunenr: 5413,
-                gateadresse: "Emma Olsens vei 1"
+                gateadresse: "Emma Olsens vei 1",
                 header : "Søppelhenting",
                 antallHenteDager : 2,
                 // See below for configurable options
