@@ -88,7 +88,7 @@ module.exports = node_helper.create({
 			url: 'https://norkartrenovasjon.azurewebsites.net/proxyserver.ashx?server=https://komteksky.norkart.no/MinRenovasjon.Api/api/fraksjoner/',
 			headers: {"kommunenr" : payload.config.kommunenr, "renovasjonappkey" : payload.config.renovasjonappkey}})
 			.then(function (response){
-				console.log(response.data)
+				//console.log(response.data)
 							self.sendSocketNotification("HRS_FRAK_INFO", response.data)
 				})//end function response
 			.catch(function (error){
