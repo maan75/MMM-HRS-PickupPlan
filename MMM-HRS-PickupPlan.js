@@ -132,8 +132,7 @@ var henteOversiktTable = document.createElement('table');
 	  for (var j = 0; j < this.henteFraksjoner.length; j++) {	//For each element in henteFraksjoner
 	      var tdWrapper = document.createElement("img");
 	      tdWrapper.src = this.fraksjonInfo.find(x => x.Id === this.henteFraksjoner[j]).NorkartStandardFraksjonIkon;
- 		tdWrapper.style.width = "50px";  // Hvis du setter bare bredde, vil høyden justeres automatisk
- 		tdWrapper.style.height = "auto";
+		  
       trWrapper.appendChild(tdWrapper);
 	    }  ///closing foreach fraksjon
  
