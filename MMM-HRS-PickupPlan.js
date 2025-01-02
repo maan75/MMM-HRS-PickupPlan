@@ -132,8 +132,9 @@ var henteOversiktTable = document.createElement('table');
 	  for (var j = 0; j < this.henteFraksjoner.length; j++) {	//For each element in henteFraksjoner
 	      var tdWrapper = document.createElement("img");
 	      tdWrapper.src = this.fraksjonInfo.find(x => x.Id === this.henteFraksjoner[j]).NorkartStandardFraksjonIkon;
-		  
-      trWrapper.appendChild(tdWrapper);
+	      tdWrapper.classList.add("HRSfraksjonsikon");  
+      
+	trWrapper.appendChild(tdWrapper);
 	    }  ///closing foreach fraksjon
  
  
