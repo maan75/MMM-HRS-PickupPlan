@@ -30,7 +30,10 @@
 	vertical-align: middle;
 }
 .HRSfraksjonsikon {
-	vertical-align: middle;
+        vertical-align: middle;
+        height: 50px; /* Set the same height as the other icons */
+        display: inline-block; /* Ensures the element is treated as a block-level for size */
+        object-fit: contain; /* Ensures the image fits within the defined size */
 }
 .trTomorrow  {
 	color : #FFFFFF;
